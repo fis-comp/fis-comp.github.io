@@ -3,13 +3,13 @@
 Voici le tableau d'évaluation général :
 
 +----------------------+------------+---------------------------------------+
-| **Contrôle continu** | **40/100** | - Participation (10)                    |
-|                      |            | - Mini-projet évalué (30)              |
+| **Contrôle continu** | **40/100** | - Participation (10)                  |
+|                      |            | - Mini-projet évalué (30)             |
 +----------------------+------------+---------------------------------------+
-| **Projet en équipe** | **60/100** | - Organisation                        |
-|                      |            | - Relationnel                         |
-|                      |            | - Communication                       |
-|                      |            | - Contenu                             |
+| **Projet en équipe** | **60/100** | - Suivi de projet                     |
+|                      |            | - Compte-rendu et                     |
+|                      |            | - Présentation orale                  |
+|                      |            | - Contenu scientifique et technique   |
 +----------------------+------------+---------------------------------------+
 
 Participation (10)
@@ -24,15 +24,14 @@ Projet en équipe (60)
 ---------------------
 Le projet en équipe est évalué sur 60 points sur les critères suivants:
 
-    - Organisation (10)
-    - Relationnel (10)
-    - Approfondissement du thème choisi (20)
-    - Présentation orale (10)
-    - Rapport écrit et code (10)
+    - Suivi de projet (16)
+    - Compte-rendu (12)
+    - Présentation orale (12)
+    - Contenu scientifique et technique (20)
 
 .. note::
 
-    :download:`Grille d'évaluation du projet en équipe <MNP_projet_grille_eval_2022-2023.pdf>`
+    :download:`Grille d'évaluation du projet en équipe <MNP_projet_grille_eval_xxxx.pdf>`
 
 .. warning::
 

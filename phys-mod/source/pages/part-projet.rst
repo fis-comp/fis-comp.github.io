@@ -51,9 +51,9 @@ Lors de la Semaine 1 vous devez réaliser les tâches suivantes :
 - **choix de l'équipe :** en binôme, ou en trinôme pour les groupes impairs.
 - **choix et nom du projet :** le sujet est libre. Si vous ne trouvez pas il y a des suggestions plus bas.
 - **choix de la problématique :** quel est le modèle à mettre en œuvre (objets, interactions, système, lois mathématiques, algorithme numérique à mettre en œuvre). Votre enseignant peut vous aider à savoir si la réalisation de votre projet est réaliste.
-- **définition des étapes de résolution**, de consolidation : définir une liste des tâches et la réprésenter sur Trello, attribuer les tâches aux membres de l'équipe
+- **définition des étapes de résolution**, de consolidation : définir une liste des tâches et la réprésenter dans un tableau de tâches, attribuer les tâches aux membres de l'équipe
 
-L'ensemble de ces informations doivent être représentées et écrites dans un tableau Trello que vous aurez créé et partagé avec votre enseignant·e.
+L'ensemble de ces informations doivent être représentées et écrites dans un tableau de taĉhes que vous aurez créé et partagé avec votre enseignant·e.
 Il vous faudra discuter de ces choix avec votre enseignant·e et les faire évoluer le cas échéant.
 
 Le sujet doit contenir une composante de modélisation. Il doit donc y avoir la simulation d'un système. Il
@@ -72,7 +72,7 @@ Pendant les semaines S2 et S3 vous réaliserez votre projet. Pour un binôme cel
 de travail cumulées. N'oubliez pas :
 
 - de programmer la réunion de travail hebdomadaire avec votre enseignant·e
-- d'actualiser les tâches de votre Trello
+- d'actualiser les tâches de votre tableau de tâches
 - de demander de l'aide à votre enseignant·e, à vos camarades
 
 Synthèse et évaluation du projet (S4-5)
@@ -82,8 +82,10 @@ Pendant la Semaine 4 il est temps de synthétiser votre travail avec les product
 - Un compte-rendu sous la forme d'un calepin Jupyter Notebook, du même type que ceux réalisés pour les mini-projets
 - Un exposé en vue d'une présentation orale
 
-En Semaine 5, vous présenterez votre projet devant les camarades de votre groupe. Vous trouverez 
-`la grille d'évaluation du projet sur cette page <info-evaluation.html#projet-en-equipe>`_.
+En Semaine 5, vous présenterez votre projet devant les camarades de votre groupe. 
+
+..
+    Vous trouverez `la grille d'évaluation du projet sur cette page <info-evaluation.html#projet-en-equipe>`_.
 
 .. note::
 
