@@ -488,7 +488,7 @@ r_n = \frac{C_{n + 1}}{C_n}
 <img alt="../../../_images/2a0fc3a1140e31b554d9b27adacb36f2229785feb146825493cc14a1c6354305.png" src="../../../_images/2a0fc3a1140e31b554d9b27adacb36f2229785feb146825493cc14a1c6354305.png" />
 </div>
 </div>
-<p>On peut montrer que le rapport <span class="math notranslate nohighlight">\(r_n\)</span> a pour limite le nombre d’or <span class="math notranslate nohighlight">\(\phi = \frac{1}{2} \left(1+\sqrt{5}\right)\)</span>. Pour des <span class="math notranslate nohighlight">\(n\)</span> suffisamment grands, la suite <span class="math notranslate nohighlight">\(C_n\)</span> tend donc vers une suite géométrique de la forme <span class="math notranslate nohighlight">\(D_n = A \phi^n\)</span>.</p>
+<p>On peut montrer que le rapport <span class="math notranslate nohighlight">\(r_n\)</span> a pour limite le nombre d’or <span class="math notranslate nohighlight">\(\phi = \frac{1}{2} \left(1+\sqrt{5}\right)\)</span>. Pour des <span class="math notranslate nohighlight">\(n\)</span> suffisamment grands, la suite <span class="math notranslate nohighlight">\(C_n\)</span> tend donc vers une suite géométrique de la forme <span class="math notranslate nohighlight">\(A \phi^n\)</span>.</p>
 <ol class="arabic simple" start="6">
 <li><p>Tracez les 50 premiers termes de la suite de Fibonacci sur un graphe semi-logarithmique (échelle log selon les ordonnées). La suite de Fibonacci tend-elle bien vers une suite géométrique ?</p></li>
 </ol>
@@ -512,9 +512,9 @@ r_n = \frac{C_{n + 1}}{C_n}
 <img alt="../../../_images/a3dc2bf753da9dcb75bc8c119b8c9f880686cdf36ee44b4908881ee43b62ec28.png" src="../../../_images/a3dc2bf753da9dcb75bc8c119b8c9f880686cdf36ee44b4908881ee43b62ec28.png" />
 </div>
 </div>
-<p>Comme <span class="math notranslate nohighlight">\(\displaystyle C_n\underset{n\to\infty}{\sim} D_n\)</span> et <span class="math notranslate nohighlight">\(\displaystyle \lim_{n\to\infty}C_n = +\infty\)</span>, on a :
+<p>Comme <span class="math notranslate nohighlight">\(\displaystyle C_n\)</span> tend vers une suite géométrique, on peut définir la suite <span class="math notranslate nohighlight">\(\displaystyle D_n\)</span> tel que:
 $<span class="math notranslate nohighlight">\(
-\log(C_n) \underset{n\to\infty}{\sim} \log(D_n) = \log A + n \log \phi
+\lim_{n\to\infty}(D_n) = \lim_{n\to\infty}\log(C_n) = \log A + n \log \phi
 \)</span>$</p>
 <ol class="arabic simple" start="7">
 <li><p>Calculez la suite <span class="math notranslate nohighlight">\(D_n\)</span> et stockez-la dans un tableau numpy.</p></li>
@@ -526,7 +526,7 @@ $<span class="math notranslate nohighlight">\(
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
