@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modélisation Numérique en Physique — Intro (Translated)</title>
+  <meta name="description" content="Translated version of the Modélisation Numérique en Physique intro page." />
+
+  <!-- Basic styles to mimic the original layout -->
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --accent:#0b5fff;
+      --muted:#6b7280;
+      --maxw:1100px;
+      --sidebar-w:280px;
+      --radius:10px;
+      font-family: Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+      color:#111827;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#f8fafc, #f7f8fb);
+      display:flex;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--maxw);
+      display:grid;
+      grid-template-columns: var(--sidebar-w) 1fr;
+      gap:20px;
+      align-items:start;
+    }
+
+    /* Sidebar */
+    nav.sidebar{
+      position:sticky;
+      top:24px;
+      align-self:start;
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+      height:fit-content;
+    }
+    nav.sidebar .logo{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:12px;
+    }
+    nav.sidebar .logo img{width:46px;height:46px;border-radius:6px;object-fit:cover}
+    nav.sidebar h3{margin:0;font-size:16px}
+    nav.sidebar ul{margin:10px 0 0;padding:0;list-style:none}
+    nav.sidebar li{margin:6px 0}
+    nav.sidebar a{
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+    }
+    nav.sidebar .sub{margin-left:14px;font-weight:400;color:var(--muted);font-size:13px}
+
+    /* Main content */
+    main.card{
+      background:var(--card);
+      padding:28px;
+      border-radius:var(--radius);
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+      min-height:320px;
+    }
+    header.page-header{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+    header.page-header h1{margin:0;font-size:26px}
+    header.page-header .meta{color:var(--muted);font-size:13px}
+
+    .contents{
+      margin:8px 0 18px;
+      padding:12px;
+      background:#f4f6fb;
+      border-radius:8px;
+      font-size:14px;
+    }
+
+    blockquote{
+      margin:16px 0;
+      padding:12px 16px;
+      border-left:4px solid #e2e8f0;
+      background:#fbfcff;
+      color:#374151;
+      font-style:italic;
+    }
+
+    .toc{margin:10px 0;padding-left:16px}
+    .toc li{margin:6px 0;color:var(--accent)}
+    footer.site-footer{
+      margin-top:20px;
+      padding-top:12px;
+      border-top:1px dashed #eef2ff;
+      color:var(--muted);
+      font-size:13px;
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      align-items:center;
+    }
+
+    /* Responsive */
+    @media (max-width:900px){
+      .container{grid-template-columns:1fr; padding-bottom:30px}
+      nav.sidebar{position:relative; top:0; display:flex; gap:12px; flex-wrap:wrap}
+      nav.sidebar ul{display:flex;flex-wrap:wrap;gap:8px}
+      nav.sidebar .sub{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="document">
+    <!-- Sidebar / navigation -->
+    <nav class="sidebar" aria-label="Main navigation">
+      <div class="logo">
+        <!-- Replace the src with your own logo or image file -->
+        <img src="assets/logo-placeholder.jpg" alt="Site logo" />
+        <div>
+          <h3>Modélisation Numérique</h3>
+          <div style="font-size:12px;color:var(--muted)">Sorbonne Univ. — Translated</div>
+        </div>
+      </div>
+
+      <strong style="display:block;margin-top:8px">Python base</strong>
+      <ul>
+        <li><a href="source/first-steps.html">Première prise en main</a></li>
+        <li class="sub"><a href="source/lists.html">Les listes Python</a></li>
+        <li class="sub"><a href="source/functions.html">Fonctions et modules</a></li>
+        <li class="sub"><a href="source/numpy.html">Le module NumPy</a></li>
+        <li class="sub"><a href="source/matplotlib.html">Le module Matplotlib</a></li>
+      </ul>
+
+      <strong style="display:block;margin-top:12px">Modélisation numérique</strong>
+      <ul>
+        <li><a href="source/model-acceleration.html">Modèle de l’accélération constante</a></li>
+        <li class="sub"><a href="source/numerical-integration.html">Dérivation et intégration numérique</a></li>
+        <li class="sub"><a href="source/edo.html">Équations différentielles ordinaires (EDO)</a></li>
+      </ul>
+
+      <strong style="display:block;margin-top:12px">Exercices & Projects</strong>
+      <ul>
+        <li><a href="source/exercises.html">Exercices</a></li>
+        <li><a href="source/projects.html">Mini-projets</a></li>
+      </ul>
+
+      <!-- Add more navigation groups as needed -->
+    </nav>
+
+    <!-- Main content -->
+    <main class="card" role="main">
+      <header class="page-header">
+        <h1>Modélisation Numérique en Physique</h1>
+        <div class="meta">By P. Delva — © Copyright 2022</div>
+      </header>
+
+      <section class="contents" aria-labelledby="contents-title">
+        <div id="contents-title" style="font-weight:700">Contents</div>
+        <ul class="toc">
+          <li><a href="#models-and-data">Modèles et données</a></li>
+          <li><a href="#course-summary">Résumé du cours</a></li>
+        </ul>
+      </section>
+
+      <article>
+        <h2 id="models-and-data">Modèles et données</h2>
+        <blockquote>“Essentially, all models are wrong, but some are useful.” — George E. P. Box</blockquote>
+        <p>
+          <!-- TRANSLATE this paragraph into the target language -->
+          Les modèles sont des constructions mentales qui forment la base des raisonnements du physicien. Ils sont construits à partir des théories physiques pour décrire un phénomène ou une situation particulière.
+        </p>
+
+        <h2 id="course-summary">Résumé du cours</h2>
+        <p>
+          <!-- TRANSLATE: explain the course summary here -->
+          Dans la première partie du cours vous développerez les compétences de programmation et de modélisation nécessaires à la résolution de problèmes de physique variés...
+        </p>
+
+        <!-- Example of call-to-action / next link like the original -->
+        <p style="margin-top:18px"><a href="source/python-base.html" style="font-weight:600;color:var(--accent)">Next: Python base →</a></p>
+      </article>
+
+      <footer class="site-footer" role="contentinfo">
+        <div>
+          Based on the original site by Phys-Mod — <span style="font-weight:600">CC BY-NC-SA 4.0</span>.
+        </div>
+        <div style="text-align:right;color:var(--muted)">
+          <small>Translate and adapt — keep attribution.</small>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Small JS to enhance mobile nav behavior (optional) -->
+  <script>
+    // Optional: highlight active link based on URL
+    (function(){
+      try {
+        var links = document.querySelectorAll('nav.sidebar a');
+        links.forEach(function(a){
+          if (location.pathname.endsWith(a.getAttribute('href'))) {
+            a.style.fontWeight = '800';
+          }
+        });
+      } catch(e){}
+    })();
+  </script>
+</body>
+</html>
